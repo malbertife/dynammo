@@ -62,7 +62,7 @@ line(xa, [3.5, 3.5],'LineStyle', '--', 'Color', 'black', 'LineWidth', 2);
 line(xa, [4.5, 4.5],'LineStyle', '--', 'Color', 'black', 'LineWidth', 2);
 line([1.5, 1.5], [0.5, 5.5], 'LineWidth', 2, 'LineStyle', '--', 'Color', 'black');
 
-[coeff, score] = princomp(X);
+[coeff, score] = pca(X);
 figure;
 imagesc(score(:, 1:2));
 set(gca,'YTick', 1:5, 'YTickLabel',1:5);

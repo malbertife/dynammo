@@ -61,7 +61,7 @@ else
   Q = abs(P);
 end
 
-[component, fp] = princomp(Q, 'econ');
+[component, fp] = pca(Q);
 a = find(strcmp('FeatureNum', varargin));
 if (isempty(a))
   Feature = fp;
